@@ -36,15 +36,19 @@ Cree una base de datos con el nombre forodb
 
 A la hora de crearla hay que aclarar que la tabla de la base de datos para los posteos con el nombre "publicaciones" deberán ser llenados con los siguientes datos en sus columnas:
 
-  ```publicaciones / utf8_general_ci
+```
+publicaciones / utf8_general_ci
   id = int
   titulo = varchar 255
   detalle = text
   url_imagen = varchar 255
   fecha_publicacion = date
+```
 
 
 El archivo .example.env no fue subido, y el .env quedó ignorado por el gitignore, por ende recomiendo hacer un archivo .env con los siguientes datos:
+
+```
 
 PORT=7000
 HOST_DB=localhost
@@ -52,6 +56,8 @@ DIALECT_DB=mysql
 USER_DB=root
 PASS_DB=''
 NAME_DB=forodb
+
+```
 
    
 Luego ejecuta node app.js y acceda de manera predeterminada a la aplicación en su navegador web en el PORT=7000 .env : http://localhost:7000.
