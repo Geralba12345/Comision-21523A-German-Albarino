@@ -41,7 +41,7 @@ A la hora de crearla hay que aclarar que la tabla de la base de datos para los p
   titulo = varchar 255
   detalle = text
   url_imagen = varchar 255
-  fecha_publicacion = date``
+  fecha_publicacion = date```
 
 
 El archivo .example.env no fue subido, y el .env quedó ignorado por el gitignore, por ende recomiendo hacer un archivo .env con los siguientes datos:
