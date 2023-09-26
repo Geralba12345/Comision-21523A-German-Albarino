@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    position: relative;
+}
+
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url(https://media.istockphoto.com/id/923509178/es/vector/fondo-de-m%C3%BAsica-retro.jpg?s=1024x1024&w=is&k=20&c=9jp9wMroA_aov3LbOOzXPDTKhQ8QapLdLT2qwwXV5XI=);
+    opacity: 0.2;
+    z-index: -1;
+}
